@@ -4,8 +4,9 @@ import TopMenu from "./TopMenu";
 import LeftMenu, {MenuItemConfig} from "./LeftMenu";
 import ContentContainer from "./ContentContainer";
 import * as css from '../../styles/skeleton/layout.m.css';
+import Registry from "@dojo/framework/widget-core/Registry";
 
-export default class Layout extends WidgetBase {
+export default class Layout extends WidgetBase<{registry: Registry}> {
     protected render() {
         const menuConfig: MenuItemConfig[] = [
             {

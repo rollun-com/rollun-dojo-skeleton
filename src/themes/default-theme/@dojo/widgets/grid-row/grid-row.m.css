@@ -1,1 +1,4 @@
-.root {}
+.root {
+    composes: root from '../../../../../../node_modules/@dojo/themes/dojo/grid-row.m.css';
+    height: fit-content;
+}

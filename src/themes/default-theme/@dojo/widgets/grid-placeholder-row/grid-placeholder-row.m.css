@@ -1,5 +1,9 @@
-.root {}
+.root {
+    composes: root from '../../../../../../node_modules/@dojo/themes/dojo/grid-placeholder-row.m.css';
 
-.loading {}
+}
 
-.spin {}
+.loading {
+    composes: loading from '../../../../../../node_modules/@dojo/themes/dojo/grid-placeholder-row.m.css';
+
+}

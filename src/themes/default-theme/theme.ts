@@ -5,13 +5,13 @@
 //import * as combobox from './@dojo/widgets/combobox/combobox.m.css';
 //import * as dialog from './@dojo/widgets/dialog/dialog.m.css';
 //import * as enhancedTextInput from './@dojo/widgets/enhanced-text-input/enhanced-text-input.m.css';
-//import * as gridBody from './@dojo/widgets/grid-body/grid-body.m.css';
-//import * as gridCell from './@dojo/widgets/grid-cell/grid-cell.m.css';
-//import * as gridFooter from './@dojo/widgets/grid-footer/grid-footer.m.css';
-//import * as gridHeader from './@dojo/widgets/grid-header/grid-header.m.css';
-//import * as gridPlaceholderRow from './@dojo/widgets/grid-placeholder-row/grid-placeholder-row.m.css';
-//import * as gridRow from './@dojo/widgets/grid-row/grid-row.m.css';
-//import * as grid from './@dojo/widgets/grid/grid.m.css';
+import * as gridBody from './@dojo/widgets/grid-body/grid-body.m.css';
+import * as gridCell from './@dojo/widgets/grid-cell/grid-cell.m.css';
+import * as gridFooter from './@dojo/widgets/grid-footer/grid-footer.m.css';
+import * as gridHeader from './@dojo/widgets/grid-header/grid-header.m.css';
+import * as gridPlaceholderRow from './@dojo/widgets/grid-placeholder-row/grid-placeholder-row.m.css';
+import * as gridRow from './@dojo/widgets/grid-row/grid-row.m.css';
+import * as grid from './@dojo/widgets/grid/grid.m.css';
 //import * as icon from './@dojo/widgets/icon/icon.m.css';
 //import * as label from './@dojo/widgets/label/label.m.css';
 //import * as listbox from './@dojo/widgets/listbox/listbox.m.css';
@@ -37,14 +37,14 @@ export default {
 	//'@dojo/widgets/combobox': combobox,
 	//'@dojo/widgets/dialog': dialog,
 	//'@dojo/widgets/enhanced-text-input': enhancedTextInput,
-	//'@dojo/widgets/grid-body': gridBody,
-	//'@dojo/widgets/grid-cell': gridCell,
-	//'@dojo/widgets/grid-footer': gridFooter,
-	//'@dojo/widgets/grid-header': gridHeader,
-	//'@dojo/widgets/grid-placeholder-row': gridPlaceholderRow,
-	//'@dojo/widgets/grid-row': gridRow,
-	//'@dojo/widgets/grid': grid,
-	//'@dojo/widgets/icon': icon,//
+	'@dojo/widgets/grid-body': gridBody,
+	'@dojo/widgets/grid-cell': gridCell,
+	'@dojo/widgets/grid-footer': gridFooter,
+	'@dojo/widgets/grid-header': gridHeader,
+	'@dojo/widgets/grid-placeholder-row': gridPlaceholderRow,
+	'@dojo/widgets/grid-row': gridRow,
+	'@dojo/widgets/grid': grid,
+	//'@dojo/widgets/icon': icon,
 	//'@dojo/widgets/label': label,
 	//'@dojo/widgets/listbox': listbox,
 	//'@dojo/widgets/progress': progress,

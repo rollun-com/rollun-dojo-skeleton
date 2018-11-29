@@ -1,5 +1,13 @@
-.root {}
+.root {
+    composes: root from '../../../../../../node_modules/@dojo/themes/dojo/grid-cell.m.css';
+}
 
-.input {}
+.input {
+    composes: input from '../../../../../../node_modules/@dojo/themes/dojo/grid-cell.m.css';
 
-.edit {}
+}
+
+.edit {
+    composes: edit from '../../../../../../node_modules/@dojo/themes/dojo/grid-cell.m.css';
+
+}

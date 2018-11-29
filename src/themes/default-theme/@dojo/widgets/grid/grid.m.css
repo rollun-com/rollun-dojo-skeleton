@@ -1,5 +1,11 @@
-.root {}
+.root {
+    composes: root from '../../../../../../node_modules/@dojo/themes/dojo/grid.m.css';
+}
 
-.header {}
+.header {
+    composes: root from '../../../../../../node_modules/@dojo/themes/dojo/grid.m.css';
+}
 
-.filterGroup {}
+.filterGroup {
+    composes: root from '../../../../../../node_modules/@dojo/themes/dojo/grid.m.css';
+}
