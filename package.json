@@ -1,7 +1,8 @@
 {
-  "name": "app-skeleton",
-  "version": "1.0.0",
+  "name": "rollun-dojo-app-skeleton",
+  "version": "0.1.0",
   "dependencies": {
+    "@dojo/cli-build-theme": "^4.0.0-alpha.1",
     "@dojo/cli-create-theme": "^4.0.0",
     "@dojo/framework": "^4.0.0",
     "@dojo/themes": "^4.0.1",
@@ -13,5 +14,10 @@
     "@dojo/cli-test-intern": "^4.0.0",
     "@types/node": "~9.6.5",
     "typescript": "~2.6.1"
-  }
+  },
+  "files": [
+    "_build/*",
+    "styles/*",
+    "themes/*"
+  ]
 }

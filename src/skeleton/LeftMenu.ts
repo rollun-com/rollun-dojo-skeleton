@@ -2,14 +2,14 @@ import WidgetBase from '@dojo/framework/widget-core/WidgetBase';
 import {v, w} from "@dojo/framework/widget-core/d";
 import {VNode, WNode} from '@dojo/framework/widget-core/interfaces';
 import MenuItemWithSubmenus from './MenuItemWithSubmenus';
-import * as css from '../../styles/skeleton/leftMenu.m.css';
+import * as css from '../../styles/leftMenu.m.css';
 
 
 export interface LeftMenuProps {
-    menuConfig: MenuItemConfig[]
+    menuConfig: LeftMenuItem[]
 }
 
-export interface MenuItemConfig {
+export interface LeftMenuItem {
     label: string,
     url?: string,
     subMenus?: {
@@ -19,11 +19,11 @@ export interface MenuItemConfig {
 }
 
 export default class LeftMenu extends WidgetBase<LeftMenuProps> {
-    protected render() {
+    protected render(): VNode {
         return v('div', {id: 'lsbMenu', classes: 'pt-2'}, this.getMenuNodesFromConfig(this.properties.menuConfig))
     }
 
-    protected getMenuNodesFromConfig(config: MenuItemConfig[]): (VNode | WNode)[] {
+    protected getMenuNodesFromConfig(config: LeftMenuItem[]): (VNode | WNode)[] {
         const resultingNodes: (VNode | WNode)[] = [];
         config.forEach((menuItem) => {
             const {label, url, subMenus} = menuItem;

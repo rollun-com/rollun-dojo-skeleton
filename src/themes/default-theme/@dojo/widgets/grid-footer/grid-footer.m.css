@@ -1,4 +1,0 @@
-.root {
-    composes: root from '../../../../../../node_modules/@dojo/themes/dojo/grid-footer.m.css';
-
-}
