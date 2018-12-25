@@ -2,15 +2,13 @@
   "name": "rollun-dojo-app-skeleton",
   "version": "0.2.0",
   "dependencies": {
-    "@dojo/cli-build-theme": "^4.0.0-alpha.1",
-    "@dojo/cli-create-theme": "^4.0.0",
-    "@dojo/cli-create-widget": "^4.0.0",
     "@dojo/framework": "^4.0.0",
-    "@dojo/themes": "^4.0.1",
     "@dojo/widgets": "^4.0.1",
+    "dojo-2-themes": "^0.1.1",
     "tslib": "~1.8.1"
   },
   "devDependencies": {
+    "@dojo/cli-create-widget": "^4.0.0",
     "@dojo/cli-build-app": "^4.0.0",
     "@dojo/cli-test-intern": "^4.0.0",
     "@types/execa": "^0.9.0",
@@ -27,5 +25,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "scripts": {
+    "build": "grunt dist"
+  }
 }

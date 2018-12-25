@@ -2,7 +2,7 @@ import { w } from '@dojo/framework/widget-core/d';
 import TitlePane from '@dojo/widgets/title-pane';
 import WidgetBase from '@dojo/framework/widget-core/WidgetBase';
 import { VNode, DNode } from '@dojo/framework/widget-core/interfaces';
-import theme from '../../../themes/default-theme/theme';
+import theme from 'dojo-2-themes/dist/src/default';
 
 export interface MenuItemWithSubmenusProps {
 	label: string;
