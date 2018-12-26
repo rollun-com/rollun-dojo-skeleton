@@ -2,7 +2,7 @@ import WidgetBase from '@dojo/framework/widget-core/WidgetBase';
 import { v, w } from '@dojo/framework/widget-core/d';
 import TopMenu, { TopMenuItem } from './widgets/TopMenu';
 import LeftMenu, { LeftMenuItem } from './widgets/LeftMenu';
-import * as css from '../styles/layout.m.css';
+import * as css from './styles/layout.m.css';
 import { DNode, VNode } from '@dojo/framework/widget-core/interfaces';
 
 export interface LayoutProps {
