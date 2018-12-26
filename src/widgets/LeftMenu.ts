@@ -2,7 +2,7 @@ import WidgetBase from '@dojo/framework/widget-core/WidgetBase';
 import { v, w } from '@dojo/framework/widget-core/d';
 import { VNode, WNode } from '@dojo/framework/widget-core/interfaces';
 import MenuItemWithSubmenus from './MenuItemWithSubmenus';
-import * as css from '../styles/leftMenu.m.css';
+import * as css from '../styles/widgets/leftMenu.m.css';
 
 export interface LeftMenuProps {
 	menuConfig: LeftMenuItem[];

@@ -1,7 +1,7 @@
 import WidgetBase from '@dojo/framework/widget-core/WidgetBase';
 import { v } from '@dojo/framework/widget-core/d';
 import { VNode, DNode } from '@dojo/framework/widget-core/interfaces';
-import * as css from '../styles/topMenu.m.css';
+import * as css from '../styles/widgets/topMenu.m.css';
 
 export interface TopMenuItem {
 	label: string;
