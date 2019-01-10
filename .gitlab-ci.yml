@@ -21,13 +21,14 @@ run_tsc:
 run_tests:
   stage: test
   script:
-  - npm test
+  - npm run test
 
 publish:
   only:
   - tags
   stage: deploy
   script:
+  - npm run build
   - apt-get update
   - apt-get install -y --no-install-recommends expect
   - git fetch origin
