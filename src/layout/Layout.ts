@@ -55,7 +55,7 @@ export default class Layout extends WidgetBase<LayoutProps> {
 						])
 					]
 				),
-				v('nav', {classes: `navbar navbar-light flex-reverse-row bg-light ${css.footer}`}, [
+				v('nav', {classes: `navbar navbar-light w-100 flex-row-reverse bg-light ${css.footer}`}, [
 					v('div', {classes: 'd-flex'}, [
 						`Rollun LC © 2014-${(new Date()).getFullYear()}`
 					])
