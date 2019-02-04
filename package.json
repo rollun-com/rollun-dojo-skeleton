@@ -28,6 +28,7 @@
   ],
   "scripts": {
     "analyse": "node_modules/.bin/tslint --project ./tslint.json",
+    "fix-linting": "node_modules/.bin/tslint --project ./tslint.json --fix",
     "build": "node_modules/.bin/grunt dist",
     "test": "node_modules/.bin/dojo test -a"
   }

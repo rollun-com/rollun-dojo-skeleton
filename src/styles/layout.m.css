@@ -1,18 +1,31 @@
-.heightAndWidth100 {
+.root {
     height: 100%;
     width:100%;
+    background-color: darkgrey;
+    font-size: 0.8rem;
 }
 
 .navLogo {
+    max-height: 1.75rem;
+}
 
+.navBar {
+    position:relative;
+    z-index: 20;
 }
 
 .outerContentContainer {
-
+    position:relative;
+    width: 1400px;
+    background-color: #fff;
+    min-height: 100%;
+    max-height: fit-content;
+    z-index: 5;
 }
 
 .contentContainer {
-
+    display: flex;
+    height: 100%
 }
 
 .menuColumn {
@@ -21,4 +34,10 @@
 
 .contentColumn {
 
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
 }

@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userName {
+    color: #fff;
+    min-width: 100px;
+}
+
+.userRole {
+    color: #fff;
+    min-width: 100px;
+}
+
