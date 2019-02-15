@@ -7,13 +7,22 @@ export interface LoginMenuProps {
 	userName: string;
 	userRole: string;
 
-	onLogout(): void;
+	onLogout?(): void;
 }
 
 export default class LoginMenu extends WidgetBase<LoginMenuProps> {
 
 	protected render(): DNode | DNode[] {
 		const {userName, userRole} = this.properties;
+		const onLogout = this.properties.onLogout
+			? this.properties.onLogout
+			: () => {
+			fetch('/oauth/logout').then(
+				() => {
+					window.location.href = '/login';
+				}
+			);
+		};
 		return v('div', {classes: css.root}, [
 			v('div',
 				{
@@ -60,7 +69,7 @@ export default class LoginMenu extends WidgetBase<LoginMenuProps> {
 					v('btn', {
 							classes: 'btn btn-sm btn-block btn-secondary',
 							onclick: () => {
-								this.properties.onLogout();
+								onLogout();
 							}
 						},
 						[

@@ -44,7 +44,7 @@ export default class Layout extends WidgetBase<LayoutProps> {
 					},
 					[
 						v('div', {id: 'contentNode-container', classes: css.contentContainer}, [
-							v('div', {classes: 'row px-1 m-0'}, [
+							v('div', {classes: `row px-1 m-0 ${css.contentRow}`}, [
 								v('div', {classes: `col-md-2 ${css.menuColumn}`, id: 'menuColumn'}, [
 									w(LeftMenu, {menuConfig: leftMenuConfig})
 								]),
