@@ -20,7 +20,14 @@ export default class TopMenu extends WidgetBase<TopMenuProps> {
 	protected getMenuNodes(config: { label: string, url: string }[]): VNode[] {
 		const resultNodes: VNode[] = [];
 		config.forEach((menuItem) => {
-			resultNodes.push(v('a', {href: menuItem.url, classes: css.topMenuItem}, [menuItem.label]));
+			resultNodes.push(v('a',
+				{
+					href: menuItem.url,
+					classes: `px-3 py-2 m-2 text-white ${css.topMenuItem}`
+				},
+				[menuItem.label]
+				)
+			);
 		});
 		return resultNodes;
 	}

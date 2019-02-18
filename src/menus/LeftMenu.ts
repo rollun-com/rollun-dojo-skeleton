@@ -53,6 +53,6 @@ export default class LeftMenu extends WidgetBase<LeftMenuProps> {
 	}
 
 	protected createLeafItemNode(label: string, url: string) {
-		return v('a', {href: url, classes: `${css.lsbBtn} btn`}, [label]);
+		return v('a', {href: url, classes: `m-1 p-1 text-align-center w-100 btn rounded-0 ${css.lsbBtn}`}, [label]);
 	}
 }
