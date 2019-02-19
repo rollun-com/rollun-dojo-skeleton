@@ -2,7 +2,6 @@ import WidgetBase from '@dojo/framework/widget-core/WidgetBase';
 import { v, w } from '@dojo/framework/widget-core/d';
 import { VNode, WNode } from '@dojo/framework/widget-core/interfaces';
 import MenuItemWithSubmenus from './MenuItemWithSubmenus';
-import * as css from '../styles/leftMenu.m.css';
 
 export interface LeftMenuProps {
 	menuConfig: LeftMenuItem[];
@@ -53,6 +52,6 @@ export default class LeftMenu extends WidgetBase<LeftMenuProps> {
 	}
 
 	protected createLeafItemNode(label: string, url: string) {
-		return v('a', {href: url, classes: `m-1 p-1 text-align-center w-100 btn rounded-0 ${css.lsbBtn}`}, [label]);
+		return v('a', {href: url, classes: `p-2 text-align-center btn btn-light w-100 rounded-0`}, [label]);
 	}
 }

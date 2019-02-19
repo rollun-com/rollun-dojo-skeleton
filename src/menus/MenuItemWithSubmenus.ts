@@ -23,7 +23,7 @@ export default class MenuItemWithSubmenus extends WidgetBase<MenuItemWithSubmenu
 			extraClasses: {
 				title: '',
 				root: 'overflow-hidden',
-				titleButton: 'btn btn-light btn-block dropdown-toggle m-1 position-relative'
+				titleButton: 'btn btn-light w-100 dropdown-toggle position-relative'
 			},
 			title: this.properties.label,
 			open: this.state.open,
